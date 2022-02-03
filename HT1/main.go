@@ -11,9 +11,19 @@ import (
 	"unsafe"
 )
 
+/*
+Esta estructura nos ayuda a llevar el control
+sobre cual es el primer espacio libre donde se puede agregar información,
+la información se comienza a agregar despues de esta estructura
+*/
+
 type control struct {
 	FirstSpace int64
 }
+
+/*
+un nombre que lo identifica y 5 apuntadores que van hacia otras estructuras.
+*/
 
 type MyStructure struct {
 	Nombre    [10]byte
@@ -35,8 +45,7 @@ func menu() {
 		fmt.Println("---------  3. Crear estructura ---------")
 		fmt.Println("---------- 4. Leer estructura ----------")
 		fmt.Println("------------- 5. Renombrar -------------")
-		fmt.Println("------------- 6. Graficar --------------")
-		fmt.Println("--------------- 7. Salir ---------------")
+		fmt.Println("--------------- 6. Salir ---------------")
 		fmt.Scanf("%d\n", &option)
 		switch option {
 		case 1:
@@ -55,9 +64,6 @@ func menu() {
 			Renombrar()
 			break
 		case 6:
-			Graficar()
-			break
-		case 7:
 			salir()
 			break
 		}
@@ -150,7 +156,7 @@ func crearArchivo() {
 	fmt.Println("-----Crear archivo binario-----")
 
 	//variable para llevar control del tamaño del disco
-	var size = 1
+	var size = 2
 
 	//se procede a crear el archivo
 	file, err := os.Create("misEstructuras.bin")
@@ -184,7 +190,7 @@ func crearArchivo() {
 	miControl := control{FirstSpace: 1}
 
 	nodoRaiz := MyStructure{}
-	copy(nodoRaiz.Nombre[:], "Ruth")
+	copy(nodoRaiz.Nombre[:], "201404106")
 	//Inicializamos todos los apuntadores de la estructura en -1
 	for i := 0; i < 5; i++ {
 		nodoRaiz.Apuntador[i] = -1
