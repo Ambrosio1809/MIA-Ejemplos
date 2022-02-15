@@ -1,0 +1,10 @@
+#Calificacion MIA - Parte 1
+
+#CREACION DE DISCOS
+
+mkdisk -size=75 -u=M -path=/tmp/d1.dk               #disco con primer ajuste
+mkdisk -u=K -path=/tmp/d2.dk -f=BF -size=10240      #tamaño de 10mb
+mkdisk -size=101 -path=/tmp/d3.dk -f=WF             #debe crear disco en MB
+mkdisk -size=1 -path="/tmp/eliminar 1.dk"
+mkdisk -size=1 -path="/tmp/eliminar 2.dk"
+mkdisk -size=1 -path="/tmp/archivos/eliminar 2.dk"
