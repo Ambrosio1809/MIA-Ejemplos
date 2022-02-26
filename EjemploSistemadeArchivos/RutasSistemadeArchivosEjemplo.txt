@@ -1,0 +1,23 @@
+-----CARPETAS
+mkdir  -path="/home/carpeta1/" -P
+mkdir  -path="/home/carpeta2/" -P
+mkdir  -path="/home/carpeta3/" -P
+mkdir  -path="/home/carpeta4/" -P
+mkdir  -path="/home/carpeta5/" -P
+mkdir  -path="/home/carpeta6/" -P
+mkdir  -path="/home/carpeta7/" -P
+mkdir  -path="/home/carpeta8/" -P
+mkdir  -path="/user/" -P
+mkdir  -path="/bin/" -P
+mkdir -path="/home/carpeta4/carpeta4" -P
+
+---ARCHIVOS 
+mkfile -path="/home/carpeta4/carpeta4/hola.txt" -P -size=370
+mkfile -path="/user/file1.txt" -P -size=185
+mkfile -path="/user/file2.txt" -P  -size=60
+mkfile -path="/user/file3.txt" -P  -size=60
+mkfile -path="/user/file4.txt" -P  -size=60
+mkfile -path="/user/file5.txt" -P  -size=60
+mkfile -path="/user/file6.txt" -P   -size=60
+mkfile -path="/user/file7.txt" -P   -size=60
+mkfile -path="/bin/archivo.txt" -P  -size=120
