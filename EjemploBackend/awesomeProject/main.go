@@ -16,6 +16,6 @@ func main() {
 		AllowedHeaders: []string{"*"},
 	})
 	router := NewRouter()
-	fmt.Println("El servidor esta corriendo en http://18.217.252.94:22")
-	log.Fatal(http.ListenAndServe(":22", c.Handler(router)))
+	fmt.Println("El servidor esta corriendo en http://18.217.252.94:80")
+	log.Fatal(http.ListenAndServe(":80", c.Handler(router)))
 }
