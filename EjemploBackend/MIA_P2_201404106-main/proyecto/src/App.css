@@ -1,0 +1,33 @@
+.home{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    margin-top: 100px;
+    background-color: rgba(230, 80, 80, 0.5);
+    font-weight: bold;
+
+}
+
+.contact{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    margin-top: 100px;
+    background-color: rgba(80, 230, 105, 0.5);
+    font-weight: bold;
+}
+
+.about{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    margin-top: 100px;
+    background-color: rgba(238, 205, 22, 0.5);
+    font-weight: bold;
+}

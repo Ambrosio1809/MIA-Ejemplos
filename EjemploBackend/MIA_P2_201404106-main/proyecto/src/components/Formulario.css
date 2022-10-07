@@ -1,0 +1,52 @@
+.main-container{
+    margin: 75px auto;
+    width: 1000px;
+    background-color: rgba(80, 230, 105, 0.5);
+}
+.main-container-Reporte{
+    margin: 75px auto;
+    width: 1000px;
+    background-color: rgba(255, 255, 255);
+}
+.main-container-Login{
+    margin: 75px auto;
+    width: 500px;
+    background-color: rgba(80, 230, 105, 0.5);
+}
+body{
+    background-image: url("https://www.wallpapertip.com/wmimgs/39-397041_estadio-fifa-19-hd.jpg");
+    background-repeat: no-repeat,repeat;
+    background-size: cover;
+    background-color: green;
+    font-family: Arial;
+}
+
+table{
+    
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+}
+th,td{    
+    padding: 20px;
+}
+
+h1{
+    align-self: center;
+    font-weight: bold;
+}
+thead{
+    background-color: darkorange;
+    border-bottom: solid 5px blue;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;    
+}
+tr:hover td{
+    background-color: #369681;
+    color:white;
+
+}
