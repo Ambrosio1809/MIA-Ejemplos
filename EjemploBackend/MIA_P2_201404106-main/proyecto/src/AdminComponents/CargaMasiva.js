@@ -24,7 +24,7 @@ function CargaMasiva (){
                 body: f
                 
             }
-            await fetch('http://13.58.127.38:5000/Carga',config)
+            await fetch('http://18.118.37.79:5000/Carga',config)
             .then(response=>{
                 console.log(response.data);
             }).catch(error=>{
